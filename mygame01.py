@@ -106,4 +106,8 @@ while True:
             #tell them they can't get it
             print('Can\'t get ' + move[1] + '!')
 
+    ## Define how a player can win
+    if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
+        print('You escaped the house with the ultra rare key and magic potion... YOU WIN!')
+        break
 
